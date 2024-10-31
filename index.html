@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UMKM</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="index.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&ampfamily=Raleway:ital,wght@0,100..900;1,100..900&ampdisplay=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&ampdisplay=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&ampdisplay=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&ampdisplay=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&ampdisplay=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Bootstrap n Aos-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <style>
+            body{
+                background :                 
+                linear-gradient(135deg, #38231f 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, #38231f 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, #38231f 25%, transparent 25%),
+                linear-gradient(45deg, #38231f 25%, transparent 25%);
+                background-size: 100px 100px;
+                background-color: #3E2723;
+            }
+        </style>
+        <script src="https://kit.fontawesome.com/3ab26b6439.js" crossorigin="anonymous"></script>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#navbar" class="scrollspy-example">
+            <nav class="container-fluid navbar navbar-expand-lg bar mx-0 px-0 fixed-top nav-unscrolled w-100" id="navbar">
+              <div class="container">
+                <img src="assets/logo.jpg" width="70" height="70" class="logo img-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav nav-pills mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#FAQ">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+        <div>
+        <section class="head container-fluid" id="home">
+            <div class="headcontent d-block d-md-flex">
+                <div class="mb-3 mb-md-0 mt-md-0 img-banner-div">
+                    <img src="assets/pangsit.jpg" class="rounded-circle img-banner">
+                </div>
+                <div class="headcontentdiv">
+                    <div>
+                        <h1>DAPUR CAICA</h1>
+                    </div>
+                    <div>
+                        <p>Delicious Dumplings, Crispy Wontons.</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section class="content container-fluid" id="about" data-aos-duration="700">
+             <div class="contentheader" data-aos="fade-up">
+                 <h1 class="contenttitle">About <span style="color: gold;">us</span></h1>
+                 <p class="contenttitledesc">Authentic, Flavorful, Handmade Dumplings.</p>
+             </div>
+             <div data-aos="fade-up" class="aboutDiv">
+                 <div class="about">
+                     <div class="carousels">
+                         <div id="carouselExample2" class="carousel carousel-fade" data-bs-ride="true">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active carousel-about" data-bs-interval="5000">
+                              <img src="assets/pangsit.jpg" class="d-block img-fluid" width="300" alt="...">
+                            </div>
+                            <div class="carousel-item carousel-about" data-bs-interval="5000">
+                              <img src="assets/dumpling.jpg" class="d-block img-fluid" width="300" alt="...">
+                            </div>
+                            <div class="carousel-item carousel-about" data-bs-interval="5000">
+                              <img src="assets/pangsit3.jpg" class="d-block img-fluid" width="300" alt="...">
+                            </div>
+                            <div class="carousel-item carousel-about" data-bs-interval="5000">
+                              <img src="assets/pangsit2.jpg" class="d-block img-fluid" width="300" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          </button>
+                        </div>                  
+                     </div>
+                    <div class="contentcontent">
+                        <p><strong style="color: gold;">Dapur Caica</strong> menyajikan pangsit buatan tangan yang diisi dengan bahan segar dan dibungkus kulit tipis nan renyah. Setiap gigitan menghadirkan cita rasa autentik, sempurna untuk camilan atau hidangan utama. Ini alasan kenapa kami beda :</p>
+                        <ul>
+                            <li><strong style="color: gold;">Rasa yang Menggoda :</strong> Kami membuat pangsit dengan rasa autentik yang bikin lidah menari!</li>
+                            <li><strong style="color: gold;">Bahan-bahan berkualitas :</strong> Kami memakai bahan berkualitas untuk membuat dumpling yang autentik dan enak!</li>
+                            <li><strong style="color: gold;">Kebersihan Terjamin:</strong> Kami mengutamakan kebersihan dalam setiap proses pembuatan pangsit dan dumpling kami.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="container-fluid" id="products">
+                <div class="contentproductheader" data-aos="fade-up" data-aos-duration="700">
+                    <h1 class="contentproducttitle">Our <span style="color: gold;">Products</span></h1>
+                    <p class="contentproducttitledesc">Tasty Foods, Just for You.</p>
+                </div>
+                
+                <div class="products mb-5 justify-content-center d-flex flex-column flex-sm-row">
+                    <div class="card col-sm-5 col-md-3 product-card" data-aos="fade-up" data-aos-duration="700" style="transition: all 0.5s ease;">
+                      <img src="assets/pangsit.jpg" class="card-img-top" alt="...">
+                      <div class="card-body products-body">
+                        <h5 class="card-title">Wonton Rebus Spicy</h5>
+                        <p class="product-desc">Wonton rebus isi daging giling dilapisi kulit pangsit serta ditambah dengan minyak cabai yang pedas</p>
+                        <button class="btn text-light btn-see-more" style="background-color: #3E2723;" data-bs-toggle="modal" data-bs-target="#exampleModalRebus">See more</button>
+                        <hr class="product-card-separator">
+                      </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalRebus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                      <div class="modal-dialog modal-dialog-centered" style="min-width: 50%;">
+                        <div class="modal-content modal-card" style="padding: 8px;">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">
+                              Wonton Rebus Spicy
+                            </h1>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-md-flex gap-3">
+                            <img src="assets/pangsit.jpg" class="mb-1 col-sm-6" height="250" width="250">
+                            <div class="product-desc d-flex flex-column justify-content-center mx-auto w-50">
+                              <h1 class="fs-4 text-light">Wonton Rebus Spicy</h1>
+                              <p class="text-light w-100">Wonton rebus isi daging giling dilapisi kulit pangsit serta ditambah dengan minyak cabai yang pedas</p>
+                                <div class="d-flex flex-column gap-2 justify-content-start">
+                                    <a class="btn btn-success d-flex justify-content-center align-items-center gap-2 text-white" href="https://api.whatsapp.com/send/?phone=%2B6285647301929&text&type=phone_number&app_absent=0" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="currentColor">
+                                            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                                        </svg>
+                                        Whatsapp
+                                    </a>
+                                    <a class="btn btn-danger d-flex justify-content-center align-items-center gap-2 text-white" href="https://www.instagram.com/dapurcaica/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="currentColor">
+                                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                                        </svg>
+                                        Instagram
+                                    </a>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card col-sm-5 col-md-3 product-card" data-aos="fade-up" data-aos-duration="700" style="transition: all 0.5s ease;">
+                      <img src="assets/dumpling.jpg" class="card-img-top" alt="...">
+                      <div class="card-body products-body">
+                        <h5 class="card-title">Wonton Goreng Chili Oil</h5>
+                        <p class="card-text product-desc">Wonton goreng isi daging giling dilapisi kulit pangsit serta ditambah dengan minyak cabai yang pedas</p>
+                        <button class="btn text-light btn-see-more" style="background-color: #3E2723;" data-bs-toggle="modal" data-bs-target="#exampleModalGoreng">See more</button>
+                        <hr class="product-card-separator">
+                      </div>
+                    </div>
+                        <div class="modal fade" id="exampleModalGoreng" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" style="min-width: 50%;">
+                            <div class="modal-content modal-card">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">
+                                  Wonton Goreng Chili Oil
+                                </h1>
+                                <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body d-md-flex gap-3">
+                                <img src="assets/dumpling.jpg" class="mb-1 col-sm-6" height="250" width="250">
+                                <div class="product-desc d-flex flex-column justify-content-center w-50">
+                                  <h1 class="fs-4 text-light">Wonton Goreng Chili Oil</h1>
+                                  <p class="text-light w-100">Wonton goreng isi daging giling dilapisi kulit pangsit serta ditambah dengan minyak cabai yang pedas</p>
+                                  <div class="d-flex gap-2 flex-column justify-content-start">
+                                    <a class="btn btn-success d-flex justify-content-center align-items-center gap-2 text-white modal-whatsapp-btn" href="https://api.whatsapp.com/send/?phone=%2B6285647301929&text&type=phone_number&app_absent=0" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="currentColor">
+                                            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                                        </svg>
+                                        Whatsapp
+                                    </a>
+                                    <a class="btn btn-danger d-flex justify-content-center align-items-center gap-2 text-white modal-instagram-btn" href="https://www.instagram.com/dapurcaica/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="currentColor">
+                                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                                        </svg>
+                                        Instagram
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                                  Close
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    <div class="card col-sm-5 col-md-3 product-card" data-aos="fade-up" data-aos-duration="700" style="transition: all 0.5s ease;">
+                      <img src="assets/ciryam.jpg" class="card-img-top" alt="...">
+                      <div class="card-body products-body">
+                        <h5 class="card-title">Cireng ayam</h5>
+                        <p class="product-desc">Cireng Ayam dengan isian ayam berbumbu gurih. Renyah di luar, kenyal di dalam.</p>
+                        <button class="btn text-light btn-see-more" style="background-color: #3E2723;" data-bs-toggle="modal" data-bs-target="#exampleModalCiryam">See more</button>
+                        <hr class="product-card-separator">
+                      </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalCiryam" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                      <div class="modal-dialog modal-dialog-centered" style="min-width: 50%;">
+                        <div class="modal-content modal-card">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">
+                              Cireng ayam
+                            </h1>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-md-flex gap-3">
+                            <img src="assets/ciryam.jpg" class="mb-1 col-sm-6" height="250" width="250">
+                            <div class="product-desc d-flex flex-column justify-content-center w-50">
+                              <h1 class="fs-4 text-light">Cireng ayam</h1>
+                              <p class="text-light w-100">Cireng Ayam dengan isian ayam berbumbu gurih. Renyah di luar, kenyal di dalam.</p>
+                                  <div class="d-flex gap-2 flex-column justify-content-start">
+                                    <a class="btn btn-success d-flex justify-content-center align-items-center gap-2 text-white" href="https://api.whatsapp.com/send/?phone=%2B6285647301929&text&type=phone_number&app_absent=0" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="currentColor">
+                                            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                                        </svg>
+                                        Whatsapp
+                                    </a>
+                                    <a class="btn btn-danger d-flex justify-content-center align-items-center gap-2 text-white" href="https://www.instagram.com/dapurcaica/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="currentColor">
+                                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                                        </svg>
+                                        Instagram
+                                    </a>
+                                  </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+         <section class="mb-5" id="testimonials" data-aos="fade-up" data-aos-duration="700">
+             <div class="testimoni-header">
+                <h1>Testimonial</h1>
+                <p>From our beloved customers.</p>
+             </div>
+             <div id="carouselExampleIndicators" class="carousel slide d-none d-md-flex">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                 <div class="testimoni gap-4">
+                    <div class="card px-3 testimonial-card" style="width: 18rem;">
+                      <div class="card-body testimonial-body d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex flex-column justify-content-center align-items-center gap-2">
+                                <img src="assets/altair.jpg" class="customer-pfp">
+                                <p class="mb-0">Altaïr Ibn-LaʼAhad </p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color:#FFD700;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"  style="color:#FFD700;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"  style="color:#FFD700;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"  style="color:#FFD700;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-1">
+                            <em class="card-text text-center">"Enak banget tolong"</em>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card px-3 testimonial-card" style="width: 18rem;">
+                      <div class="card-body testimonial-body d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <img src="assets/guts.jpg" class="customer-pfp">
+                                <p class="mb-0">Guts</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                            <em class="card-text text-center">"ENAK BANGET CCUYYY"</em>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card px-3 testimonial-card" style="width: 18rem;">
+                      <div class="card-body testimonial-body d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <img src="assets/ranni.png" class="customer-pfp">
+                                <p class="mb-0">Ranni The Witch</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                            <em class="card-text text-center">"Enak bangettt pedesnya nagihhh"</em>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item">
+                 <div class="testimoni gap-4">
+                    <div class="card px-3 testimonial-card" style="width: 18rem;">
+                      <div class="card-body testimonial-body d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <img src="assets/aeri.jpg" class="customer-pfp">
+                                <p class="mb-0">Uchinaga Aeri</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                            <em class="card-text text-center">"Enak, pedes banget tapi enak"</em>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card px-3 testimonial-card" style="width: 18rem;">
+                        <div class="card-body testimonial-body d-flex flex-column justify-content-center">
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex flex-column align-items-center gap-2">
+                                    <img src="assets/gojosaturu.jpg" class="customer-pfp">
+                                    <p class="mb-0">Gojo Satoru</p>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                                <em class="card-text text-center">"Pedesnya nagih polll enak banget"</em>
+                            </div>
+                        </div>
+                     </div>
+                    <div class="card px-3 testimonial-card" style="width: 18rem;">
+                      <div class="card-body testimonial-body d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <img src="assets/musashi.jpg" class="customer-pfp">
+                                <p class="mb-0">Miyamoto Musashi</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                            <em class="card-text text-center">"Rasanya tidak pernah beda, suka banget"</em>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              </div>
+                <div id="carouselExampleSlidesOnly" class="carousel slide d-sm-block d-md-none" data-bs-ride="carousel">
+                  <div class="carousel-inner testimoni-carousel-inner">
+                    <div class="carousel-item active">
+                    <div class="card px-3 testimonial-card" style="width: 18rem;">
+                      <div class="card-body testimonial-body d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <img src="assets/musashi.jpg" class="customer-pfp">
+                                <p class="mb-0">Miyamoto Musashi</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                            <em class="card-text text-center">"Rasanya tidak pernah beda, suka banget"</em>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <div class="card px-3 testimonial-card" style="width: 18rem;">
+                      <div class="card-body testimonial-body d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <img src="assets/aeri.jpg" class="customer-pfp">
+                                <p class="mb-0">Uchinaga Aeri</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                            <em class="card-text text-center">"Enak, pedes banget tapi enak"</em>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <div class="card px-3 testimonial-card" style="width: 18rem;">
+                      <div class="card-body testimonial-body d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex flex-column align-items-center gap-2">
+                                <img src="assets/guts.jpg" class="customer-pfp">
+                                <p class="mb-0">Guts</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="color: yellow;" width="20" height="20">
+                                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="#FFD700"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                            <em class="card-text text-center">"ENAK BANGET CCUYYY"</em>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+         </section>
+         <section class="container-fluid" id="FAQ" data-aos="fade-up" data-aos-duration="700">
+            <div class="FAQ">
+                <div class="FAQheader">
+                    <h1 class="FAQheadertitle">Frequently Asked <span style="color: gold;">Questions</span></h1>
+                    <p>Pertanyaan yang sering ditanyakan.</p>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-center gap-5 align-items-center">
+                    <div class="d-flex d-md-block justify-content-center px-5">
+                        <img src="assets/wonton.jpg" height="225">
+                    </div>
+                <div class="FAQ-body d-none d-md-block w-50">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header"> 
+                          <button class="accordion-button collapsed" style="background-color: #f0f0f0;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Apakah produk di Dapur Caica halal?
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+                            <div class="accordion-body bg-warning">
+                                Ya, semua produk kami dijamin halal dengan bahan bersertifikat halal.
+                            </div>
+                        </div>
+                      </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" style="background-color: #f0f0f0;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Apakah produk Dapur Caica bersih?
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body bg-warning">
+                                    Kebersihan adalah prioritas kami. Semua produk dibuat dengan standar kebersihan tinggi.
+                                </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" style="background-color: #f0f0f0;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Bagaimana cara memesan di Dapur Caica?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-warning">
+                               Kami menggunakan sistem Pre-Order untuk memesan produk di Dapur Caica, customer bisa melakukan Pre-Order lewat Whatsapp yang tersedia.
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="FAQ-body d-block d-md-none w-100">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" style="background-color: #f0f0f0;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Apakah produk di Dapur Caica halal?
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+                            <div class="accordion-body">
+                                Ya, semua produk kami dijamin halal dengan bahan bersertifikat halal.
+                            </div>
+                        </div>
+                      </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" style="background-color: #f0f0f0;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Apakah produk Dapur Caica bersih?
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    Kebersihan adalah prioritas kami. Semua produk dibuat dengan standar kebersihan tinggi.
+                                </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" style="background-color: #f0f0f0;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Bagaimana cara memesan di Dapur Caica?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                               Kami menggunakan sistem Pre-Order untuk memesan produk di Dapur Caica, customer bisa melakukan Pre-Order lewat Whatsapp yang tersedia.
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section data-aos="fade-up" data-aos-duration="700" class="contact-section d-flex align-items-center">
+             <div id="contacts" class="w-75 mx-auto">
+                <div class="contactus d-block mx-auto mx-md-0 d-md-flex">
+                    <div class="contactus1 col-md-8 col-lg-9 px-3">
+                        <h1 class="text-center text-md-start fs-1">Contact us</h1>
+                        <p class="text-center text-md-start">Curious about what we can do for you? Contact us now and start enjoying extraordinary meals!</p>
+                    </div>
+                    <div class="contactus2 col-md-4 col-lg-3">
+                        <button class="btn btn-warning whatsapp-btn p-3">
+                            <a href="https://api.whatsapp.com/send/?phone=%2B6285647301929&text&type=phone_number&app_absent=0" target="_blank">CONTACT US</a>
+                        </button>
+                    </div>
+                </div>
+             </div>
+         </section>
+        <section class="contact-form mb-5 mt-5 rounded px-4 mx-auto bg-light" data-aos="fade-up" data-aos-duration="700"> 
+            <div class="contactus-form rounded px-3 py-2 py-md-0 px-md-1 d-block d-md-flex justify-content-start mx-auto gap-5">
+                <div class="gmap mb-3 mb-md-0">
+                    <iframe class="medium-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15818.741642415795!2d110.6651585!3d-7.6091708!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a4194a6f053d7%3A0xd0f57fc0caf3d6aa!2sJurangjero%2C%20Karanganom%2C%20Klaten%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1724038174577!5m2!1sen!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="small-map d-block d-md-none" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15818.741642415795!2d110.6651585!3d-7.6091708!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a4194a6f053d7%3A0xd0f57fc0caf3d6aa!2sJurangjero%2C%20Karanganom%2C%20Klaten%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1724038458065!5m2!1sen!2sid" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="large-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15818.741642415795!2d110.6651585!3d-7.6091708!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a4194a6f053d7%3A0xd0f57fc0caf3d6aa!2sJurangjero%2C%20Karanganom%2C%20Klaten%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1724048367926!5m2!1sen!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <form class="form-contact mt-3" id="whatsapp-form" onsubmit="sendMessage(event)">
+                    <h1>Send us a letter!</h1>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control" id="name">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control mb-3" id="message" id="message"></textarea>
+                        <button class="btn btn-warning" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+         </section>
+         <section>
+            <footer class="text-center text-lg-start text-muted footer">
+              <section class="">
+                <div class="container text-center text-md-start mt-5">
+                  <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                      <h6 class="text-uppercase text-warning fw-bold mb-4">
+                        DAPUR CAICA
+                      </h6>
+                      <p>
+                        Nikmati wonton kami yang dibuat dengan penuh perhatian dan disajikan dengan senyuman.
+                      </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                      <h6 class="text-uppercase fw-bold mb-4 text-warning">
+                        Quick Links
+                      </h6>
+                      <p>
+                        <a onclick="goto('home');" class="text-reset">Home</a>
+                      </p>
+                      <p>
+                        <a onclick="goto('about');" class="text-reset">About Us</a>
+                      </p>
+                      <p>
+                        <a onclick="goto('products');" class="text-reset">Products</a>
+                      </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4 text-warning">Contact</h6>
+                        <p>
+                            <a class="instagram-link text-decoration-none" href="https://www.instagram.com/dapurcaica/" target="_blank">
+                                <i class="fab fa-instagram me-3"></i>
+                                @dapurcaica
+                            </a>
+                        </p>
+                        <p>
+                            <a href="http://wa.me/+6285876200861" target="_blank" class="instagram-link text-decoration-none">
+                                <i class="fas fa-phone me-3"></i>
+                                085647301929
+                            </a>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <hr class="separator">
+            </footer>
+         </section>
+        </div>
+    </body>
+</html>
+<script>
+    AOS.init();
+</script>
