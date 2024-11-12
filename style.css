@@ -314,9 +314,8 @@ body{
 }
 .product-card{
     border: 0 solid transparent;
-    background-color: #fcba03 !important;
+    background-color: #3E2723 !important;
     opacity: 0.8;
-
 }
 .product-card:hover{
     scale: 1.05;
